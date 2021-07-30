@@ -1,0 +1,82 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "os",
+          "style": "powerline",
+          "foreground": "#26C6DA",
+          "background": "#12107c",
+          "properties": {
+            "linux": "\uF17c"
+          }
+        },
+        {
+          "type": "battery",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#FFFFFF",
+          "background": "#000000",
+          "properties": {
+            "battery_icon": "",
+            "discharging_icon": "\uE231 ",
+            "charging_icon": "\uE234 ",
+            "charged_icon": "\uE22F ",
+            "color_background": true,
+            "charged_color": "#4caf50",
+            "charging_color": "#40c4ff",
+            "discharging_color": "#ff5722",
+            "postfix": "\uF295 ",
+            "display_charging": true
+          }
+        },
+        {
+           "type": "session",
+           "style": "powerline",
+           "foreground": "#ffffff",
+           "background": "#000000",
+           "display_user": false,
+           "default_user_name": "dbouchillon",
+           "template": "{{.UserName}}",
+           "display_host": true
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#777777",
+          "properties" : {
+              "home_icon": "\uF7DB",
+              "folder_icon": "\uF115",
+              "style": "full"
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#380A19",
+          "background": "#a79b59",
+          "properties": {
+            "display_status": true,
+            "display_status_detail": false,
+            "display_stash_count": false,
+            "display_upstream_icon": true
+          }
+        },
+        {
+          "type": "exit",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#ff8080"
+        }
+      ]
+    }
+  ],
+  "final_space": true
+}
